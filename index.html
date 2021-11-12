@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SVG wave animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="information">
+    <h1>PRACTICE 3 </h1>
+    <h2>This is our first animation!| WAVE</h2>
+  </div>
+  <div class="waves">
+    <svg width="50%" height="330px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <linearGradient id="gradient1" x1="100%" y1="0%" x2="100%" y2="0%">
+        <stop offset="100%" stop-color="#ffc8dd" />
+      </linearGradient>
+      <path fill="url(#gradient1)" d="M0 67 C 273,183 822,-40 1920.00,106 V 359 H 0 V 67 Z">
+        <animate 
+          repeatCount="indefinite" 
+          fill="url(#gradient1)" 
+          attributeName="d" 
+          dur="5s"
+          attributeType="XML"
+          values="
+            M0 77 
+            C 473,283
+              822,-40
+              1920,116 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+
+            M0 77 
+            C 473,-40
+              1222,283
+              1920,136 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+
+            M0 77 
+            C 973,260
+              1722,-53
+              1920,120 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+
+            M0 77 
+            C 473,283
+              822,-40
+              1920,116 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z
+            ">
+        </animate>
+      </path>
+    </svg>
+  </div>
+</body>
+</html>

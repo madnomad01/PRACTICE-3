@@ -1,0 +1,47 @@
+html{
+  background: linear-gradient(90deg, rgba(31,0,36,1) 0%, rgba(212,138,181,1) 50%, rgba(255,0,95,1) 100%);
+  height: 50px;
+}
+body{
+  height: 100%;
+  margin: 0;
+}
+.information{
+  font-family: sans-serif;
+  text-align: center;
+  color: rgb(109, 5, 5);
+}
+.waves{
+  width: 100%;
+  bottom:0;
+ height: 100%;
+  position: absolute;
+  z-index:99;
+}
+.waves svg{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  animation-name: move-left;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.footer{
+	text-align: center;
+	color: white;
+}
+@keyframes example {
+  0%   {
+    left:0px;
+    top:0px;}
+  
+  100%  {
+    left:-5000px;
+    top:200px;}
+  
+  100% {
+    left:50px; 
+    top:0px;}
+}
+
